@@ -7,7 +7,7 @@ import os
 
 while True:
     def clear_screen():
-        os.system('cls')
+        os.system('cls') #change if on linux
 
     # Call the function to clear the screen
     clear_screen()
@@ -74,7 +74,7 @@ while True:
         mouse.hook(on_mouse_event)
 
         while not keyboard.is_pressed('P'):
-            pass  # Wait for the right mouse button to be pressed
+            pass  # Wait for the right button to be pressed
 
         recording = False  # Stop recording
         mouse.unhook(on_mouse_event)
